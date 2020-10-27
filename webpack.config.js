@@ -13,8 +13,8 @@ module.exports = (env, options) => {
     devtool: isProduction ? 'none' : 'source-map',
     watch: !isProduction,
     entry: {
-      main: ['./src/pages/main/sass/main.scss', './src/pages/main/main.js'],
-      pets: ['./src/pages/pets/sass/pets.scss', './src/pages/pets/pets.js'],
+      main: ['./src/pages/main/sass/index.scss', './src/pages/main/index.js'],
+      projects: ['./src/pages/projects/sass/projects.scss', './src/pages/projects/projects.js'],
     },
     output: {
       filename: '[name].js',
@@ -55,16 +55,16 @@ module.exports = (env, options) => {
     plugins: [
       new CleanWebpackPlugin(),
       new HTMLWebpackPlugin({
-        template: __dirname + '/src/pages/main/main.html',
-        filename: 'main.html',
+        template: __dirname + '/src/pages/main/index.html',
+        filename: 'index.html',
         minify: isProduction,
         chunks: ['main'],
       }),
       new HTMLWebpackPlugin({
-        template: __dirname + '/src/pages/pets/pets.html',
-        filename: 'pets.html',
+        template: __dirname + '/src/pages/projects/projects.html',
+        filename: 'projects.html',
         minify: isProduction,
-        chunks: ['pets'],
+        chunks: ['projects'],
       }),
       new CopyWebpackPlugin([{ from: './src/assets', to: 'assets' }]),
       new MiniCssExtractPlugin({

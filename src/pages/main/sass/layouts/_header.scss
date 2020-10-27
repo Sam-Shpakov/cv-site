@@ -45,6 +45,7 @@
       font-size: 2rem;
       letter-spacing: 0.12rem;
       line-height: 110%;
+      text-shadow: $text-shadow;
     }
 
     .header__logo-subtitle {
@@ -57,6 +58,7 @@
       letter-spacing: 0.085rem;
       color: $color-light-xl;
       text-align: end;
+      text-shadow: $text-shadow;
     }
   }
 

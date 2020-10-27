@@ -1,5 +1,9 @@
-$color-primary: #f1cdb3;
-$color-primary-light: #fddcc4;
+$color-light-text: #ffffff;
+$color-dark-text: #ffffff;
+$color-button: #00bcd4;
+
+$color-primary: #ffffff;
+$color-primary-light: #a7a7a7;
 $color-dark-text: #292929;
 $color-light-xl: #ffffff;
 $color-light-l: #f6f6f6;
@@ -10,6 +14,8 @@ $color-dark-m: #b2b2b2;
 $color-dark-3xl: #292929;
 $color-overlay: rgba(41, 41, 41, 0.6);
 $color-modal: $color-light-s;
+
+$text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.29);
 
 $content-width: 80rem;
 $tablet-width: 48rem;
