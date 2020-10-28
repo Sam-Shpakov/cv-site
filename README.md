@@ -1,3 +1,1 @@
-### [SkaymanT=cv](https://rolling-scopes-school.github.io/skaymant-JS2020Q3/shelter/main.html)
-
-
+### [SkaymanT=cv](https://skaymant-cv.netlify.app)
