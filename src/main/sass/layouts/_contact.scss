@@ -1,4 +1,6 @@
 .contact {
+  padding-top: 120px;
+
   &__name {
     text-align: center;
     padding: 10px 20px;
@@ -7,35 +9,55 @@
     color: $light-gray;
     margin: 30px 0;
     font-size: 2em;
+    font-weight: 550;
   }
 
   &__wrapper {
-    width: 80rem;
-    margin-right: auto;
-    margin-left: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media (max-width: $content-width) {
+      padding: 0 20px;
+    }
 
     @media (max-width: $tablet-width) {
-      width: 750px;
+      padding: 0 10px;
     }
   }
 
   &__content {
+    width: 100%;
+    margin: 20px 0;
     display: flex;
+    justify-content: space-around;
+
+    @media (max-width: $tablet-width) {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
   }
 
   &__info {
     display: flex;
     position: relative;
-    width: 35%;
+    width: 400px;
     background-color: $gray;
     min-height: 480px;
     height: auto;
-    margin: 0.5rem 0 1rem 0;
     transition: box-shadow 0.25s;
     border-radius: 2px;
     box-shadow: $card-shadow;
-    margin-right: 10px;
+    margin: 20px 20px;
+
+    @media (max-width: $tablet-width) {
+      width: 300px;
+    }
   }
+
   .list_info {
     display: flex;
     flex-direction: column;
@@ -66,18 +88,21 @@
     color: $color-primary;
   }
 
+  .contact_telegram {
+    color: $color-primary;
+  }
+
   &__form {
     display: flex;
     padding: 20px 40px;
-    width: 65%;
+    width: 100%;
     min-height: 480px;
     height: auto;
     position: relative;
-    margin: 0.5rem 0 1rem 0;
     transition: box-shadow 0.25s;
     border-radius: 2px;
     box-shadow: $card-shadow;
-    margin-left: 5px;
+    margin: 20px 20px;
   }
 
   #contact-form {
@@ -88,7 +113,7 @@
     position: relative;
     margin-top: 1rem;
 
-    input {
+    .contact_input {
       background-color: transparent;
       border: none;
       border-bottom: 1px solid #9e9e9e;
@@ -104,6 +129,43 @@
       transition: all 0.3s;
     }
 
+    .contact_input:focus {
+      border-bottom: 1px solid #00dcf8;
+      box-shadow: 0 1px 0 0 #009cb0;
+    }
+
+    .contact_input:valid {
+      border-bottom: 1px solid #4caf50;
+      box-shadow: 0 1px 0 0 #4caf50;
+    }
+
+    .contact_textarea {
+      background-color: transparent;
+      border: none;
+      border-bottom: 1px solid #9e9e9e;
+      border-radius: 0;
+      outline: none;
+      height: 3rem;
+      width: 100%;
+      font-size: 16px;
+      margin: 0 0 8px 0;
+      padding: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+      -webkit-transition: border 0.3s, -webkit-box-shadow 0.3s;
+      transition: border 0.3s, -webkit-box-shadow 0.3s;
+      transition: box-shadow 0.3s, border 0.3s;
+      transition: box-shadow 0.3s, border 0.3s, -webkit-box-shadow 0.3s;
+      resize: none;
+    }
+
+    .contact_textarea:focus {
+      border-bottom: 1px solid #00dcf8;
+      box-shadow: 0 1px 0 0 #009cb0;
+    }
+
     label {
       color: #9e9e9e;
       position: absolute;
@@ -114,5 +176,30 @@
       transition: 0.2s ease-out;
       font-weight: 400;
     }
+  }
+  .contact_control {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .map-box {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+  .map {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+  .map iframe {
+    width: 100%;
+  }
+  .signature {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: $light-gray;
+    font-weight: 300;
   }
 }

@@ -10,10 +10,14 @@
   padding: 25px 20px;
   box-shadow: $card-shadow;
   position: relative;
-  margin: 0.5rem 0 1rem 0;
+  margin: 0.5rem 1rem;
   transition: box-shadow 0.25s;
   border-radius: 2px;
   width: 400px;
+
+  @media (max-width: $mobile-big-width) {
+    width: 300px;
+  }
 
   .skill-title {
     margin-top: 20px;

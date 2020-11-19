@@ -1,14 +1,20 @@
 .education {
-  .wrapper__education {
+  padding-top: 120px;
+
+  &__wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
 
-  @media (max-width: $content-width) {
-    align-self: center;
+    @media (max-width: $content-width) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 0 10px;
+    }
   }
 
   .project-name {
@@ -19,5 +25,6 @@
     color: $light-gray;
     font-size: 2em;
     margin: 30px 0;
+    font-weight: 550;
   }
 }

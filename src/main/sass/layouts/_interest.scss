@@ -1,6 +1,8 @@
 .interest {
   padding: 30px 0;
   background-color: transparent;
+  padding-top: 120px;
+  margin: 0 20px;
 
   &__name {
     text-align: center;
@@ -10,14 +12,15 @@
     color: $light-gray;
     margin: 30px 0;
     font-size: 2em;
+    font-weight: 550;
   }
 
   &__wrapper {
-    width: 80rem;
-
-    @media (max-width: $tablet-width) {
-      width: 750px;
-    }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
   &__card {
@@ -38,23 +41,31 @@
     text-align: center;
     color: $light-gray;
     font-weight: 300;
+
+    @media (max-width: $tablet-width) {
+      padding: 0 5px;
+      text-align: justify;
+    }
   }
 
   .list-inline {
     display: flex;
     position: relative;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-
-    padding-left: 0;
-    margin-left: -5px;
     list-style: none;
     text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
+
+    @media (max-width: $tablet-width) {
+      justify-content: center;
+      li {
+        width: 80px;
+      }
+    }
   }
   .interest-topic {
     margin: 10px 15px;

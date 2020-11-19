@@ -1,12 +1,9 @@
-$gray: #424242;
-$light-gray: #606060;
-$blue: #00bcd4;
 $height: 300px;
 
 .timeline {
+  position: relative;
   margin-top: 15px;
   width: 100%;
-  height: $height + 50px;
   transition-delay: 0.3s;
   display: block;
   margin-left: auto;
@@ -14,18 +11,19 @@ $height: 300px;
 
   ul {
     list-style: none;
+    position: relative;
   }
 
   &:before {
     content: '';
     position: absolute;
-    height: $height - 50px;
+    height: 90%;
     width: 2px;
     background: $blue;
     left: 50%;
 
-    @media (max-width: $content-width) {
-      left: 0%;
+    @media (max-width: $tablet-width) {
+      left: 9px;
     }
   }
 
@@ -56,6 +54,30 @@ $height: 300px;
         left: -2em;
         top: 0;
       }
+
+      @media (max-width: $tablet-width) {
+        &:nth-child(even) {
+          float: right;
+          margin-top: 0;
+        }
+
+        &:before {
+          border-top: 2em solid $gray;
+          border-left: 2em solid transparent;
+          position: absolute;
+          left: -2em;
+          top: 0;
+        }
+      }
+      @media (max-width: $mobile-big-width) {
+        &:before {
+          border-top: 1em solid $gray;
+          border-left: 1em solid transparent;
+          position: absolute;
+          left: -1em;
+          top: 0;
+        }
+      }
     }
 
     &:nth-child(odd) {
@@ -67,6 +89,30 @@ $height: 300px;
         right: -2em;
         left: auto;
       }
+
+      @media (max-width: $tablet-width) {
+        &:nth-child(odd) {
+          float: right;
+        }
+
+        &:before {
+          border-top: 2em solid $gray;
+          border-left: 2em solid transparent;
+          position: absolute;
+          left: -2em;
+          top: 0;
+        }
+      }
+
+      @media (max-width: $mobile-big-width) {
+        &:before {
+          border-top: 1em solid $gray;
+          border-left: 1em solid transparent;
+          position: absolute;
+          left: -1em;
+          top: 0;
+        }
+      }
     }
 
     &:nth-of-type(2n + 1) {
@@ -75,16 +121,54 @@ $height: 300px;
 
     &:nth-child(even) i {
       position: absolute;
-      left: -14%;
+      left: -18.5%;
     }
 
     &:nth-child(odd) i {
       position: absolute;
-      left: 118.5%;
+      left: 114%;
     }
+
     @media (max-width: $content-width) {
-      left: 25px;
-      width: 95%;
+      &:nth-child(even) i {
+        left: -18.5%;
+      }
+
+      &:nth-child(odd) i {
+        left: 114%;
+      }
+    }
+
+    @media (max-width: 1100px) {
+      &:nth-child(even) i {
+        left: -19.5%;
+      }
+
+      &:nth-child(odd) i {
+        left: 113.25%;
+      }
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 90%;
+
+      &:nth-child(even) i {
+        left: -11.5%;
+      }
+
+      &:nth-child(odd) i {
+        left: -11.5%;
+      }
+    }
+
+    @media (max-width: $mobile-big-width) {
+      &:nth-child(even) i {
+        left: -10.5%;
+      }
+
+      &:nth-child(odd) i {
+        left: -10.5%;
+      }
     }
   }
 
@@ -92,16 +176,20 @@ $height: 300px;
     background: $blue;
     width: 25px;
     height: 25px;
-    position: absolute;
     top: -11px;
     overflow: hidden;
-    margin-left: -23px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     border-radius: 50%;
+
+    @media (max-width: $mobile-big-width) {
+      width: 15px;
+      height: 15px;
+      top: -8px;
+    }
   }
-  
+
   .timeline-content {
     display: flex;
     flex-direction: column;

@@ -1,23 +1,30 @@
 .experiance {
-  .wrapper__experiance {
+  padding-top: 120px;
+  &__wrapper {
     width: 100%;
+    padding: 0 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
 
-  @media (max-width: $content-width) {
-    align-self: center;
+    @media (max-width: $content-width) {
+      padding: 0 20px;
+    }
+
+    @media (max-width: $tablet-width) {
+      padding: 0 10px;
+    }
   }
 
   .project-name {
     text-align: center;
-    padding: 10px 20px;
+    padding: 20px 20px;
     text-transform: uppercase;
     font-weight: 500;
     color: $light-gray;
-    margin: 30px 0;
+    margin-bottom: 20px;
     font-size: 2em;
+    font-weight: 550;
   }
 }
