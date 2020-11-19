@@ -1,0 +1,23 @@
+.experiance {
+  .wrapper__experiance {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media (max-width: $content-width) {
+    align-self: center;
+  }
+
+  .project-name {
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $light-gray;
+    margin: 30px 0;
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,65 @@
+.interest {
+  padding: 30px 0;
+  background-color: transparent;
+
+  &__name {
+    text-align: center;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $light-gray;
+    margin: 30px 0;
+    font-size: 2em;
+  }
+
+  &__wrapper {
+    width: 80rem;
+
+    @media (max-width: $tablet-width) {
+      width: 750px;
+    }
+  }
+
+  &__card {
+    padding: 30px 20px 20px 20px;
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    background-color: #fff;
+    transition: box-shadow 0.25s;
+    border-radius: 2px;
+    box-shadow: $card-shadow;
+  }
+
+  &_subtitle {
+    width: 100%;
+    height: auto;
+    padding: 0 80px;
+    margin: 20px 0;
+    text-align: center;
+    color: $light-gray;
+    font-weight: 300;
+  }
+
+  .list-inline {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .interest-topic {
+    margin: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    color: $light-gray;
+  }
+}

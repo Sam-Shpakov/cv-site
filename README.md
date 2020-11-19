@@ -1,1 +1,1 @@
-### [SkaymanT=cv](https://skaymant-cv.netlify.app)
+### [SkaymanT-cv](https://skaymant-cv.netlify.app)

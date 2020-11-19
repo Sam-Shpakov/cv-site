@@ -1,0 +1,91 @@
+.button_primary {
+  width: 180px;
+  height: auto;
+  margin: 10px 10px;
+  background: $color-button;
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  outline: 0;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  user-select: none;
+  color: $color-light-text;
+}
+
+.button_primary:hover {
+  cursor: pointer;
+  background: $color-button_hover;
+}
+
+.button_secondary {
+  width: 12.94rem;
+  height: 3.25rem;
+  background: none;
+  border: 2px solid #f1cdb3;
+  box-sizing: border-box;
+  border-radius: 100px;
+
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  color: $color-dark-text;
+  font-size: 1.07rem;
+  line-height: 130%;
+  letter-spacing: 0.05em;
+}
+
+.button_secondary:hover {
+  cursor: pointer;
+  background: $color-primary-light;
+  border: 2px solid $color-primary-light;
+}
+
+.button_arrow {
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid #f1cdb3;
+  background: none;
+  border-radius: 100px;
+  font-size: 10px;
+}
+
+.button_arrow:hover {
+  cursor: pointer;
+  background: $color-primary-light;
+  border: 2px solid $color-primary-light;
+}
+
+.button_close {
+  position: absolute;
+  left: -10px;
+  width: 3.25rem;
+  height: 3.25rem;
+  border: 2px solid #f1cdb3;
+  background: none;
+  border-radius: 100px;
+  font-size: 10px;
+
+  @media (max-width: 1279px) {
+    left: -10px;
+  }
+  @media (max-width: $tablet-width) {
+    left: -20px;
+  }
+}
+
+.button_close:hover {
+  cursor: pointer;
+  background: $color-primary-light;
+  border: 2px solid $color-primary-light;
+}

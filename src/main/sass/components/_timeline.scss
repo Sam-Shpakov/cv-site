@@ -1,0 +1,147 @@
+$gray: #424242;
+$light-gray: #606060;
+$blue: #00bcd4;
+$height: 300px;
+
+.timeline {
+  margin-top: 15px;
+  width: 100%;
+  height: $height + 50px;
+  transition-delay: 0.3s;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  ul {
+    list-style: none;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    height: $height - 50px;
+    width: 2px;
+    background: $blue;
+    left: 50%;
+
+    @media (max-width: $content-width) {
+      left: 0%;
+    }
+  }
+
+  li {
+    background: #ffffff;
+    position: relative;
+    left: 0;
+    width: 43%;
+    margin: 0.5rem 0 1rem 0;
+    border-radius: 2px;
+    box-shadow: $card-shadow;
+
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+    }
+
+    &:nth-child(even) {
+      float: right;
+      margin-top: 70px;
+
+      &:before {
+        border-top: 2em solid $gray;
+        border-left: 2em solid transparent;
+        position: absolute;
+        left: -2em;
+        top: 0;
+      }
+    }
+
+    &:nth-child(odd) {
+      float: left;
+
+      &:before {
+        border-top: 2em solid $gray;
+        border-right: 2em solid transparent;
+        right: -2em;
+        left: auto;
+      }
+    }
+
+    &:nth-of-type(2n + 1) {
+      clear: both;
+    }
+
+    &:nth-child(even) i {
+      position: absolute;
+      left: -14%;
+    }
+
+    &:nth-child(odd) i {
+      position: absolute;
+      left: 118.5%;
+    }
+    @media (max-width: $content-width) {
+      left: 25px;
+      width: 95%;
+    }
+  }
+
+  .icon-point {
+    background: $blue;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -11px;
+    overflow: hidden;
+    margin-left: -23px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+  }
+  
+  .timeline-content {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+
+    .timeline-header {
+      width: 100%;
+      height: auto;
+      background-color: $gray;
+      float: left;
+      margin-bottom: 20px;
+
+      h3 {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        padding: 0 20px;
+        line-height: 30px;
+        color: #fff;
+        font-size: 1.2em;
+        font-weight: 400;
+        background-color: $gray;
+        margin: 1.46rem 0 1.168rem 0;
+        letter-spacing: 1px;
+      }
+    }
+
+    .sub-heading {
+      text-decoration: none;
+      color: $gray;
+      padding: 0 20px;
+      line-height: 1.2;
+      font-weight: 400;
+      margin: 0 0 10px;
+    }
+
+    .content-p {
+      padding: 10px 20px 20px 20px;
+      font-weight: 300;
+      color: $light-gray;
+      margin: 0 0 10px;
+    }
+  }
+}
