@@ -230,6 +230,10 @@ $height: 300px;
       font-weight: 300;
       color: $light-gray;
       margin: 0 0 10px;
+
+      a {
+        color: $color-primary;
+      }
     }
   }
 }
