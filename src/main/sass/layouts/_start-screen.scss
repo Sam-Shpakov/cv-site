@@ -1,10 +1,13 @@
 .start-screen {
-  padding-top: 120px;
-  background: url('./assets/images/noise_transparent.png'),
-    radial-gradient(100% 215.42% at 0% 0%, #7c7c7c 0%, #262425 100%), #211f20;
+  padding-top: 80px;
+  background-image: url('./assets/images/1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media (max-width: $content-width) {
-    padding-top: 120px;
+    padding-top: 80px;
   }
 
   .wrapper__start_screen {
@@ -39,6 +42,7 @@
       color: $color-light-xl;
       max-width: 19.375rem;
       margin-bottom: 41px;
+      text-shadow: $text-shadow;
       @media (max-width: $tablet-width) {
         width: 200px;
       }
@@ -48,6 +52,7 @@
       color: $color-dark-s;
       max-width: 28.75rem;
       margin-bottom: 41px;
+      text-shadow: $text-shadow;
     }
 
     .start-screen__content_button {
@@ -58,9 +63,9 @@
     }
   }
 
-  .start-screen__puppy {
+  .start-screen__image {
     display: flex;
-
+    transition: 0.3s;
     img {
       width: 569px;
       height: 593px;

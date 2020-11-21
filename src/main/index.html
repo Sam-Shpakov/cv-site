@@ -58,7 +58,8 @@
         </h2>
         <p class="start-screen__content_subheading">
           It’s not just about apps. Learning to code gave me problem-solving
-          skills and a way to communicate with others on a technical level. I work in the field of information security
+          skills and a way to communicate with others on a technical level. I work in the field of information
+          security
           (cryptography) 7 years. Now I think to change the profile of work.
         </p>
         <div>
@@ -69,7 +70,7 @@
           </a>
         </div>
       </div>
-      <div class="start-screen__puppy">
+      <div class="start-screen__image">
         <img src="./assets/images/noteBook.png" alt="noteBook" />
       </div>
     </div>
@@ -220,15 +221,34 @@
         <li data-filter="5" class=""><a>Angular</a></li>
       </ul>
       <div class="filter-container">
-        <div class="filter-item" data-category="1, 5">
-          <div class="portfolio__card">
-            <figure class="hover-effect">
-              <img class="img-responsive" src="../assets/images/noteBook.png" alt="">
-              <a data-toggle="modal" data-target="#modal1" href="#0">
-                <figcaption><span>View Details</span></figcaption>
-              </a>
-            </figure>
-            <h6 class="text-capitalize text-center">Portfolio Title Here</h6>
+        <div class="filter-item" id="filter-item" data-category="1, 5">
+          <div class="card" id="card">
+            <div class="card__title">Click for detail</div>
+            <img class="card__image"
+              src="https://images.unsplash.com/photo-1550587542-1668407b73d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
+              alt="project">
+            <div class="card__name">Portfolio Title Here</div>
+          </div>
+        </div>
+        <div class="filter-item" id="filter-item" data-category="1, 5">
+          <div class="card" id="card">
+            <div class="card__title">Click for detail</div>
+            <img class="card__image" src="./assets/images/noteBook.png" alt="project">
+            <div class="card__name">Portfolio Title Here</div>
+          </div>
+        </div>
+        <div class="filter-item" id="filter-item" data-category="1, 5">
+          <div class="card" id="card">
+            <div class="card__title">Click for detail</div>
+            <img class="card__image" src="./assets/images/noteBook.png" alt="project">
+            <div class="card__name">Portfolio Title Here</div>
+          </div>
+        </div>
+        <div class="filter-item" id="filter-item" data-category="1, 5">
+          <div class="card" id="card">
+            <div class="card__title">Click for detail</div>
+            <img class="card__image" src="./assets/images/noteBook.png" alt="project">
+            <div class="card__name">Portfolio Title Here</div>
           </div>
         </div>
       </div>
@@ -328,75 +348,58 @@
       </div>
     </div>
   </section>
-  <footer class="contact" id="contact">
-    <h4 class="interest__name">contact</h4>
-    <div class="wrapper contact__wrapper">
-      <div class="contact__content">
-        <div class="contact__info">
-          <ul class="list_info" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
-            <li>
-              <a href="callto:+375444731032" class="contact_phone">
-                <img src="../assets/icons/phone.svg" alt="phone">
-                <p>+375444731032</p>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/sam-s-0168141a1/" class="contact_email">
-                <img src="../assets/icons/linkedin.svg" alt="linkedin">
-                <p>Linkedin</p>
-              </a>
-            </li>
-            <li>
-              <a href="https://t.me/Jack34Black" class="contact_telegram">
-                <img src="../assets/icons/telegram.svg" alt="telegram">
-                <p>Jack34Black</p>
-              </a>
-            </li>
-            <li>
-              <a href="mailto:SkaymanT@yandex.ru" class="contact_email">
-                <img src="../assets/icons/mail.svg" alt="mail">
-                <p>SkaymanT@yandex.ru</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="contact__form">
-          <form id="contact-form" name="contact-form" role="form">
-            <div class="input-field">
-              <input id="name" name="name" type="text" class="contact_input" required="">
-              <label for="name">Name</label>
-            </div>
-            <div class="input-field">
-              <input id="subject" name="subject" type="text" class="contact_input" required="">
-              <label for="subject">Subject</label>
-            </div>
-            <div class="input-field">
-              <input id="email" name="email" type="email" class="contact_input" required="">
-              <label for="email">Email</label>
-            </div>
-            <div class="input-field">
-              <textarea id="textarea" name="message" class="contact_textarea" required=""></textarea>
-              <label for="textarea">Message</label>
-            </div>
-            <div class="contact_control">
-              <button type="submit" id="submit" name="submit-data" value="Submit" class="button_primary">
-                <i class="ion-ios-paperplane"></i>Send</button>
-            </div>
+  <section class="contact" id="contact">
+    <div id='parallax-image'>
+      <h4 class="contact__name">contact me to get started</h4>
+      <div class="wrapper contact__wrapper">
+        <div class="contact__content">
+          <div class="contact__info">
+            If you're considering working with me on your next web development project and would like a custom
+            quotation, please email or call me to discuss your requirements.
+          </div>
+          <div class="contact__links">
+            <ul class="list_info" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
+              <li>
+                <a href="tel:+375444731032" class="contact_phone">
+                  <img src="../assets/icons/phone.svg" alt="phone">
+                  <p>+375444731032</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/sam-s-0168141a1/" class="contact_email">
+                  <img src="../assets/icons/linkedin.svg" alt="linkedin">
+                  <p>Linkedin</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://t.me/Jack34Black" class="contact_telegram">
+                  <img src="../assets/icons/telegram.svg" alt="telegram">
+                  <p>Jack34Black</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:SkaymanT@yandex.ru" class="contact_email">
+                  <img src="../assets/icons/mail.svg" alt="mail">
+                  <p>SkaymanT@yandex.ru</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="contact__note">
+            Before we can work together, please understand that as a professional web developer, I can't help you with
+            "urgent jobs" or take on projects that are smaller than a day. I aim for long-term relationships, not a
+            quick buck.
+          </div>
         </div>
       </div>
-      </form>
-      <div class="map-box">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.027825350522!2d27.553665612342076!3d53.90536752878621!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbd1e082500001%3A0x649c3fa6dba2ecd7!2z0JzRg9C30LXQuSDQuNGB0YLQvtGA0LjQuCDQs9C-0YDQvtC00LAg0JzQuNC90YHQutCw!5e0!3m2!1sru!2sby!4v1580500725354!5m2!1sru!2sby"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
-      </div>
-      <div class="signature-box">
-        <p class="signature">
-          Made by Shpakov Sam
-        </p>
-      </div>
+    </div>
+  </section>
+  <footer class='about-project'>
+    <div class="signature-box">
+      <p class="signature">
+        This <a href="https://github.com/SkaymanT" title="code">product</a> was made in vanilla js without using
+        frameworks by Shpakov Sam
+      </p>
     </div>
   </footer>
 </body>

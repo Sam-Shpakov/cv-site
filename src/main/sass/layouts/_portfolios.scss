@@ -1,7 +1,8 @@
 .portfolios {
   padding: 30px 0;
   background-color: transparent;
-  padding-top: 120px;
+  padding-top: 80px;
+  margin-top: -80px;
 
   &__name {
     text-align: center;
@@ -39,8 +40,9 @@
 
   .filter-container {
     display: flex;
+    justify-content: space-evenly;
     flex-wrap: wrap;
-    margin: 0 20px;
+    margin: 0 50px;
 
     @media (max-width: $tablet-width) {
       flex-direction: column;
@@ -49,9 +51,10 @@
     }
 
     .filter-item {
-      width: 400px;
+      width: 300px;
+      height: 400px;
       position: relative;
-      margin: 0.5rem 0 1rem 0;
+      margin: 10px;
       background-color: #fff;
       transition: box-shadow 0.25s;
       border-radius: 2px;
@@ -60,59 +63,11 @@
       @media (max-width: $tablet-width) {
         width: 300px;
       }
-    }
-    .hover-effect {
-      position: relative;
-      overflow: hidden;
-      margin: 0;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      cursor: pointer;
 
       img {
-        width: 100%;
-        height: auto;
-        transition: 0.5s ease 0s;
+        width: 300px;
+        height: 300px;
       }
-
-      figcaption {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        left: 0;
-        height: 100%;
-        padding: 20px;
-        text-align: center;
-        font-weight: 400;
-        color: red;
-        z-index: 10;
-
-        background: rgba(66, 66, 66, 0.5);
-        opacity: 0;
-        -webkit-transition: 1s ease 0.15s;
-        -moz-transition: 1s ease 0.15s;
-        -o-transition: 1s ease 0.15s;
-        transition: 1s ease 0.15s;
-      }
-
-      figcaption span {
-        position: absolute;
-        width: 200px;
-        margin-left: -100px;
-        left: 50%;
-        top: 50%;
-      }
-    }
-
-    .portfolio__card h6 {
-      line-height: 30px;
-      padding: 10px 10px;
-      padding-bottom: 20px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: $light-gray;
-      text-align: center;
     }
   }
 }

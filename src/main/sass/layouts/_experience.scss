@@ -1,5 +1,6 @@
 .experiance {
-  padding-top: 120px;
+  padding-top: 80px;
+
   &__wrapper {
     width: 100%;
     padding: 0 40px;
@@ -7,6 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 80px;
 
     @media (max-width: $content-width) {
       padding: 0 20px;
@@ -19,7 +21,7 @@
 
   .project-name {
     text-align: center;
-    padding: 20px 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
     font-weight: 500;
     color: $light-gray;

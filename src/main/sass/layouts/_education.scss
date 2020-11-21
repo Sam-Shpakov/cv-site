@@ -1,5 +1,10 @@
 .education {
-  padding-top: 120px;
+  padding-top: 80px;
+  background-image: url('./assets/images/1.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   &__wrapper {
     width: 100%;
@@ -7,6 +12,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
 
     @media (max-width: $content-width) {
       padding: 0 20px;
@@ -22,9 +28,9 @@
     padding: 10px 20px;
     text-transform: uppercase;
     font-weight: 500;
-    color: $light-gray;
+    color: $color-primary;
     font-size: 2em;
-    margin: 30px 0;
+    margin-bottom: 50px;
     font-weight: 550;
   }
 }
