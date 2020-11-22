@@ -24,7 +24,7 @@
         <div class="menu__container">
           <ul class="navigation">
             <li class="navigation__item active">
-              <a class="navigation__item_link" href="#start">About</a>
+              <a class="navigation__item_link" href="#about">About</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__item_link" href="#experiance">Experiance</a>
@@ -50,7 +50,7 @@
     </div>
     </div>
   </header>
-  <section class="start-screen" id="start">
+  <section class="start-screen" id="about">
     <div class="wrapper wrapper__start_screen">
       <div class="start-screen__content">
         <h2 class="start-screen__content_heading">
@@ -129,7 +129,7 @@
           <p>HTML/CSS/SASS(SCSS)<span>90%</span></p>
           <div class="progress skill-progress" data-percent="90%">
             <div class="skill-determinate" style="width: 90%;">
-              <i class="skill-determinate-circle" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -137,7 +137,7 @@
           <p>Angular<span>10%</span></p>
           <div class="skill-progress" data-percent="10%">
             <div class="skill-determinate" style="width: 10%;">
-              <i class="skill-determinate-circle" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@
           <p>Typescript<span>70%</span></p>
           <div class="skill-progress" data-percent="70%">
             <div class="skill-determinate" style="width: 70%;">
-              <i class="skill-determinate-circle" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -153,7 +153,7 @@
           <p>React+Redux<span>50%</span></p>
           <div class="skill-progress" data-percent="50%">
             <div class="skill-determinate" style="width: 50%;">
-              <i class="skill-determinate-circle" data-aos="zoom-in" data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -164,8 +164,7 @@
           <p>Teamwork<span>100%</span></p>
           <div class="progress skill-progress" data-percent="100%">
             <div class="determinate skill-determinate" style="width: 100%;">
-              <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in"
-                data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -174,8 +173,7 @@
           <p>Problem solving<span>90%</span></p>
           <div class="progress skill-progress" data-percent="90%">
             <div class="determinate skill-determinate" style="width: 90%;">
-              <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in"
-                data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -183,8 +181,7 @@
           <p>Leadership<span>80%</span></p>
           <div class="progress skill-progress" data-percent="80%">
             <div class="determinate skill-determinate" style="width: 80%;">
-              <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in"
-                data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -192,8 +189,7 @@
           <p>Analytical Skill<span>80%</span></p>
           <div class="progress skill-progress" data-percent="80%">
             <div class="determinate skill-determinate" style="width: 80%;">
-              <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in"
-                data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -201,8 +197,7 @@
           <p>Creativity<span>80%</span></p>
           <div class="progress skill-progress" data-percent="80%">
             <div class="determinate skill-determinate" style="width: 80%;">
-              <i class="skill-determinate-circle fa fa-circle aos-init aos-animate" data-aos="zoom-in"
-                data-aos-delay="300" data-aos-offset="0"></i>
+              <i class="skill-determinate-circle"></i>
             </div>
           </div>
         </div>
@@ -213,16 +208,16 @@
     <h4 class="portfolios__name">portfolios</h4>
     <div class="wrapper portfolios__wrapper">
       <ul class="portfolios_filter">
-        <li class="active-card" data-filter="all"><a>All</a></li>
-        <li data-filter="1" class=""><a>React+TS</a></li>
-        <li data-filter="2" class=""><a>React+Redux+TS</a></li>
-        <li data-filter="3" class=""><a>Vanila JS</a></li>
-        <li data-filter="4" class=""><a>Vanila TS</a></li>
+        <li class="active-tab" data-filter="all"><a>All</a></li>
+        <li data-filter="1" class=""><a>JavaScript</a></li>
+        <li data-filter="2" class=""><a>Typescript</a></li>
+        <li data-filter="3" class=""><a>React</a></li>
+        <li data-filter="4" class=""><a>Redux</a></li>
         <li data-filter="5" class=""><a>Angular</a></li>
       </ul>
       <div class="filter-container">
-        <div class="filter-item" id="filter-item" data-category="1, 5">
-          <div class="card" id="card">
+        <div class="filter-item active-item" data-category="1, 5">
+          <div class="card">
             <div class="card__title">Click for detail</div>
             <img class="card__image"
               src="https://images.unsplash.com/photo-1550587542-1668407b73d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
@@ -230,22 +225,22 @@
             <div class="card__name">Portfolio Title Here</div>
           </div>
         </div>
-        <div class="filter-item" id="filter-item" data-category="1, 5">
-          <div class="card" id="card">
+        <div class="filter-item active-item" data-category="2, 3">
+          <div class="card">
             <div class="card__title">Click for detail</div>
             <img class="card__image" src="./assets/images/noteBook.png" alt="project">
             <div class="card__name">Portfolio Title Here</div>
           </div>
         </div>
-        <div class="filter-item" id="filter-item" data-category="1, 5">
-          <div class="card" id="card">
+        <div class="filter-item active-item" data-category="4">
+          <div class="card">
             <div class="card__title">Click for detail</div>
             <img class="card__image" src="./assets/images/noteBook.png" alt="project">
             <div class="card__name">Portfolio Title Here</div>
           </div>
         </div>
-        <div class="filter-item" id="filter-item" data-category="1, 5">
-          <div class="card" id="card">
+        <div class="filter-item active-item" data-category="1, 5">
+          <div class="card">
             <div class="card__title">Click for detail</div>
             <img class="card__image" src="./assets/images/noteBook.png" alt="project">
             <div class="card__name">Portfolio Title Here</div>

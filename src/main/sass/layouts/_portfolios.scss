@@ -25,6 +25,8 @@
     justify-content: center;
     list-style-type: none;
     flex-wrap: wrap;
+    margin-bottom: 30px;
+
     li {
       color: $light-gray;
       cursor: pointer;
@@ -34,7 +36,7 @@
     }
   }
 
-  .active-card {
+  .active-tab {
     border-bottom: 2px solid #00bcd4;
   }
 
@@ -51,14 +53,25 @@
     }
 
     .filter-item {
-      width: 300px;
-      height: 400px;
+      width: 0;
+      height: 0;
       position: relative;
       margin: 10px;
       background-color: #fff;
-      transition: box-shadow 0.25s;
       border-radius: 2px;
       box-shadow: $card-shadow;
+      transition: height 350ms ease-in-out, width 350ms ease-in-out,
+        padding 350ms ease-in-out;
+      overflow: hidden;
+      display: none;
+
+      &.active-item {
+        width: 300px;
+        height: 400px;
+        overflow: visible;
+        display: flex;
+        visibility: visible;
+      }
 
       @media (max-width: $mobile-big-width) {
         width: 230px;
