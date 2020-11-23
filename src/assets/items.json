@@ -1,6 +1,6 @@
 [
   {
-    "name": "Katrine",
+    "id": "Katrine",
     "img": "./assets/images/pets-katrine.png",
     "type": "Cat",
     "breed": "British Shorthair",
@@ -11,7 +11,7 @@
     "parasites": ["none"]
   },
   {
-    "name": "Jennifer",
+    "id": "Jennifer",
     "img": "./assets/images/pets-jennifer.png",
     "type": "Dog",
     "breed": "Labrador",
@@ -22,7 +22,7 @@
     "parasites": ["none"]
   },
   {
-    "name": "Woody",
+    "id": "Woody",
     "img": "./assets/images/pets-woody.png",
     "type": "Dog",
     "breed": "Golden Retriever",
@@ -33,7 +33,7 @@
     "parasites": ["none"]
   },
   {
-    "name": "Sophia",
+    "id": "Sophia",
     "img": "./assets/images/pets-sophia.png",
     "type": "Dog",
     "breed": "Shih tzu",
@@ -44,7 +44,7 @@
     "parasites": ["none"]
   },
   {
-    "name": "Timmy",
+    "id": "Timmy",
     "img": "./assets/images/pets-timmy.png",
     "type": "Cat",
     "breed": "British Shorthair",
@@ -55,7 +55,7 @@
     "parasites": ["none"]
   },
   {
-    "name": "Charly",
+    "id": "Charly",
     "img": "./assets/images/pets-charly.png",
     "type": "Dog",
     "breed": "Jack Russell Terrier",
@@ -66,7 +66,7 @@
     "parasites": ["lice", "fleas"]
   },
   {
-    "name": "Scarlett",
+    "id": "Scarlett",
     "img": "./assets/images/pets-scarlett.png",
     "type": "Dog",
     "breed": "Jack Russell Terrier",
@@ -77,7 +77,7 @@
     "parasites": ["none"]
   },
   {
-    "name": "Freddie",
+    "id": "Freddie",
     "img": "./assets/images/pets-freddie.png",
     "type": "Cat",
     "breed": "British Shorthair",

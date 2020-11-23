@@ -1,1 +1,1 @@
-export { onScrollHandler } from './scroll';
+export { onScrollHandler, onScrollAnimationHandler } from './scroll';

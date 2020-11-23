@@ -4,7 +4,8 @@ import {
   parallaxCardHandler,
   filterCardHandler,
   onScrollHandler,
-  // addCardClickHandler,
+  addCardClickHandler,
+  onScrollAnimationHandler,
 } from './js';
 
 window.onload = () => {
@@ -13,5 +14,6 @@ window.onload = () => {
   parallaxCardHandler();
   filterCardHandler();
   onScrollHandler();
-  // addCardClickHandler();
+  onScrollAnimationHandler();
+  addCardClickHandler();
 };

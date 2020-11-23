@@ -28,5 +28,12 @@
     margin-bottom: 20px;
     font-size: 2em;
     font-weight: 550;
+
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+
+    &.anim-active {
+      transform: scale(1);
+    }
   }
 }

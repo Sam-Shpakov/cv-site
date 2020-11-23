@@ -7,13 +7,16 @@ export function menuClickHandler() {
     }
     if (isClickOnMenuItem(event)) {
       closeMenu();
-      document.querySelector('.header').scrollIntoView({
-        block: 'center',
-        behavior: 'smooth',
-      });
+      clickOnMenuItem(event);
     }
   });
 }
+
+const clickOnMenuItem = (event) => {
+  element = event.target.closest('li');
+  let element = document.getElementById(element.querySelector('a').innerHTML);
+  element.scrollIntoView();
+};
 
 const closeMenu = () => {
   document.getElementById('menu__toggle').checked = false;
@@ -38,7 +41,8 @@ const isClickOnMenuItem = (event) => {
     const { classList, parentNode } = event.target;
     return (
       classList.length &&
-      (classList.contains('active') || parentNode.classList.contains('active'))
+      (classList.contains('navigation__item') ||
+        parentNode.classList.contains('navigation__item'))
     );
   }
 };

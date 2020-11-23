@@ -109,13 +109,13 @@
           font-weight: normal;
           font-size: 32px;
           line-height: 160%;
-
           color: $color-dark-s;
-
           text-decoration: none;
-
           transition-duration: 0.25s;
         }
+      }
+      &__item:first-letter {
+        text-transform: uppercase;
       }
 
       &__item:hover {
@@ -130,7 +130,6 @@
         color: inherit;
         text-decoration: none;
       }
-
       .active {
         color: $color-light-s;
         border-bottom: solid 3px $color-primary;
@@ -153,9 +152,6 @@
     .navigation {
       visibility: visible;
       left: calc(100% - 320px);
-    }
-    .header__logo {
-      display: none;
     }
   }
 }

@@ -1,5 +1,5 @@
-export async function givePets() {
-  let response = await fetch('./assets/pets.json');
-  let pets = await response.json();
-  return pets;
+export async function giveInfoItems() {
+  let response = await fetch('./assets/items.json');
+  let items = await response.json();
+  return items;
 }

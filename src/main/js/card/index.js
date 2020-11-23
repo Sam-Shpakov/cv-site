@@ -1,18 +1,22 @@
-import { givePets } from '../common';
+import { giveInfoItems } from '../common';
 import { CardModal } from './card-modal';
 
 export async function addCardClickHandler() {
-  let pets = await givePets();
-  document.querySelector('.pets__slider').addEventListener('click', (event) => {
-    if (event.target.closest('.card')) {
-      generateCardModal(getClickedData(pets, event.target.closest('.card').id));
-      event.target.closest('.card').classList.add('active-card');
-    }
-  });
+  let items = await giveInfoItems();
+  document
+    .querySelector('.filter-container')
+    .addEventListener('click', (event) => {
+      if (event.target.closest('.card')) {
+        generateCardModal(
+          getClickedData(items, event.target.closest('.card').id)
+        );
+        event.target.closest('.card').classList.add('active-card');
+      }
+    });
 }
 
-function getClickedData(pets, name) {
-  return pets.find((pet) => pet.name.toLowerCase() === name.toLowerCase());
+function getClickedData(items, id) {
+  return items.find((item) => item.id.toLowerCase() === id.toLowerCase());
 }
 const generateCardModal = (data) => {
   let cardModal = new CardModal('modal', data);

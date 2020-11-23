@@ -14,6 +14,13 @@
     color: $color-primary;
     font-size: 2em;
     font-weight: 550;
+
+    transform: scale(0);
+    transition: all 0.8s ease 0s;
+
+    &.anim-active {
+      transform: scale(1);
+    }
   }
 
   &__wrapper {
@@ -55,6 +62,15 @@
     text-align: center;
     margin: 0 100px;
 
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+
+    &.anim-active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
+
     @media (max-width: $tablet-width) {
       margin: 0 10px;
       padding: 5px;
@@ -77,6 +93,15 @@
     padding: 20px;
     text-align: center;
     margin: 0 100px;
+
+    transform: translate(0px, 120%);
+    opacity: 0;
+    transition: all 0.8s ease 0s;
+
+    &.anim-active {
+      transform: translate(0px, 0px);
+      opacity: 1;
+    }
 
     @media (max-width: $tablet-width) {
       margin: 0 10px;
@@ -107,6 +132,26 @@
       font-weight: 300;
       display: block;
       list-style-type: none;
+      transform: scale(0);
+    }
+
+    &.anim-active {
+      li {
+        @for $let from 1 to 7 {
+          $delay: $let * 0.2;
+          &:nth-child(#{$let}) {
+            @if $let==1 {
+              transition: all 0.8s ease 0s;
+            } @else {
+              transition: all 0.8s ease #{$delay + s};
+            }
+          }
+        }
+      }
+    }
+
+    &.anim-active li {
+      transform: scale(1);
     }
   }
 

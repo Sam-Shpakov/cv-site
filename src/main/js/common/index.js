@@ -1,2 +1,2 @@
 export { giveRandomArray } from './random';
-export { givePets } from './service';
+export { giveInfoItems } from './service';

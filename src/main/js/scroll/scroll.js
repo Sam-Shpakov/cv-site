@@ -1,5 +1,6 @@
 export function onScrollHandler() {
   document.addEventListener('scroll', onScroll);
+  window.addEventListener;
 }
 
 function onScroll() {
@@ -20,4 +21,43 @@ function onScroll() {
       });
     }
   });
+}
+
+export function onScrollAnimationHandler() {
+  const animItems = document.querySelectorAll('.anim-items');
+  setTimeout(() => {
+    animOnScroll(animItems);
+  }, 300);
+  if (animItems.length > 0) {
+    window.addEventListener('scroll', () => animOnScroll(animItems));
+  }
+}
+
+function animOnScroll(animItems) {
+  for (let index = 0; index < animItems.length; index++) {
+    console.log(animItems);
+    const animItem = animItems[index];
+    const animItemHeight = animItem.offsetHeight;
+    const animItemOffset = offset(animItem).top;
+    const animStart = 4;
+    let animItemPoint = window.innerHeight - animItemHeight / animStart;
+    console.log(animItemPoint);
+    if (animItemHeight > window.innerHeight) {
+      animItemPoint = window.innerHeight - window.innerHeight / animStart;
+    }
+
+    if (
+      pageYOffset > animItemOffset - animItemPoint &&
+      pageYOffset < animItemOffset + animItemHeight
+    ) {
+      animItem.classList.add('anim-active');
+    }
+  }
+}
+
+function offset(element) {
+  const rect = element.getBoundingClientRect();
+  const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  return { top: rect.top + scrollTop, left: rect.left + scrollLeft };
 }
