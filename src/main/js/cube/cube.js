@@ -1,4 +1,4 @@
-export function onScrollHandler() {
+export function onClickCubelHandler() {
   document.addEventListener('scroll', onScroll);
 }
 

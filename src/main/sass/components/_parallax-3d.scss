@@ -1,0 +1,95 @@
+.viewport {
+  -webkit-perspective: 800px;
+  -webkit-perspective-origin: 50% 200px;
+  -webkit-transform: scale(0.75, 0.75);
+  -moz-perspective: 800px;
+  -moz-perspective-origin: 50% 200px;
+  -moz-transform: scale(0.75, 0.75);
+  perspective: 800px;
+  perspective-origin: 50% 200px;
+  transform: scale(0.75, 0.75);
+}
+
+.cube {
+  position: relative;
+  margin: 0 auto 100px;
+  height: 400px;
+  width: 400px;
+  * {
+    box-sizing: none;
+    -webkit-box-sizing: none;
+  }
+
+  -webkit-transition: -webkit-transform 50ms linear;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(-10deg) rotateY(20deg);
+  -moz-transition: -moz-transform 50ms linear;
+  -moz-transform-style: preserve-3d;
+  -moz-transform: rotateX(-10deg) rotateY(20deg);
+  transition: transform 50ms linear;
+  transform-style: preserve-3d;
+  transform: rotateX(-10deg) rotateY(20deg);
+  box-sizing: none;
+  -webkit-box-sizing: none;
+
+  a {
+    color: #fff;
+  }
+
+  div {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(66, 66, 66, 0.95);
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 3px;
+  }
+
+  div:first-child {
+    -webkit-transform: rotateX(90deg) translateZ(200px);
+    -moz-transform: rotateX(90deg) translateZ(180px);
+    transform: rotateX(90deg) translateZ(200px);
+  }
+
+  div:nth-child(2) {
+    -webkit-transform: translateZ(200px);
+    -moz-transform: translateZ(200px);
+    transform: translateZ(200px);
+  }
+
+  div:nth-child(3) {
+    -webkit-transform: rotateY(90deg) translateZ(200px);
+    -moz-transform: rotateY(90deg) translateZ(200px);
+    transform: rotateY(90deg) translateZ(200px);
+    text-align: center;
+  }
+
+  div:nth-child(4) {
+    -webkit-transform: rotateY(180deg) translateZ(200px);
+    -moz-transform: rotateY(180deg) translateZ(200px);
+    transform: rotateY(180deg) translateZ(200px);
+  }
+
+  div:nth-child(5) {
+    -webkit-transform: rotateY(-90deg) translateZ(200px);
+    -moz-transform: rotateY(-90deg) translateZ(200px);
+    transform: rotateY(-90deg) translateZ(200px);
+  }
+
+  div:nth-child(5) p {
+    text-align: center;
+    font-size: 2.77em;
+    margin: 40px;
+    line-height: 60px;
+  }
+
+  div:nth-child(6) {
+    -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+    transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+  }
+}

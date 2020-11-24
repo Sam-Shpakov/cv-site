@@ -23,10 +23,10 @@ export class Modal {
     this.modalCloseBtn = this.createDomNode(
       this.modalCloseBtn,
       'div',
-      'modal__close-icon'
+      'modal__close'
     );
     this.modalCloseBtn.innerHTML =
-      '<button class="button_close"><img src="./assets/icons/icon-close.svg" alt="close"></button>';
+      '<button class="button_close">x</button>';
 
     this.setContent(content);
     this.appendModalElement();
@@ -51,9 +51,9 @@ export class Modal {
   }
 
   appendModalElement() {
+    this.modal.append(this.modalCloseBtn);
     this.modal.append(this.modalContent);
     this.overlay.append(this.modal);
-    this.overlay.append(this.modalCloseBtn);
   }
 
   bindEvents() {

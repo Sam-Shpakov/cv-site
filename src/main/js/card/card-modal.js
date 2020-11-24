@@ -3,40 +3,28 @@ import { Modal } from '../modal';
 export class CardModal extends Modal {
   constructor(
     classes,
-    {
-      name,
-      img,
-      type,
-      breed,
-      description,
-      age,
-      inoculations,
-      diseases,
-      parasites,
-    }
+    { id, date, demo, img, description, category, code, stack }
   ) {
     super(classes);
-    this.name = name;
+    this.id = id;
+    this.date = date;
+    this.demo = demo;
     this.img = img;
-    this.breed = breed;
-    this.type = type;
     this.description = description;
-    this.age = age;
-    this.inoculations = inoculations;
-    this.diseases = diseases;
-    this.parasites = parasites;
+    this.category = category;
+    this.code = code;
+    this.stack = stack;
   }
 
   generateContentCardModal() {
     this.content = super.createDomNode(this.modal, 'div', 'card-modal-content');
-
     this.imgCardModal = super.createDomNode(
       this.imgCardModal,
       'img',
       'card-modal-img'
     );
     this.imgCardModal.src = this.img;
-    this.imgCardModal.alt = this.name;
+    this.imgCardModal.alt = this.id;
 
     this.infoCardModal = super.createDomNode(
       this.infoCardModal,
@@ -45,14 +33,15 @@ export class CardModal extends Modal {
     );
 
     this.infoTitle = super.createDomNode(this.infoTitle, 'h3', 'info-title');
-    this.infoTitle.innerHTML = this.name;
+    this.infoTitle.innerHTML = this.id;
 
-    this.infoSubtitle = super.createDomNode(
-      this.infoSubtitle,
-      'h4',
-      'info-subtitle'
-    );
-    this.infoSubtitle.innerHTML = `${this.type} - ${this.breed}`;
+    this.infoDemo = super.createDomNode(this.infoDemo, 'a', 'button_primary');
+    this.infoDemo.innerHTML = `LIVE DEMO`;
+    this.infoDemo.href = this.demo;
+
+    this.infoCode = super.createDomNode(this.infoCode, 'a', 'button_primary');
+    this.infoCode.innerHTML = `CODE`;
+    this.infoCode.href = this.code;
 
     this.infoParagraph = super.createDomNode(
       this.infoParagraph,
@@ -62,10 +51,9 @@ export class CardModal extends Modal {
     this.infoParagraph.innerHTML = this.description;
 
     this.infoList = super.createDomNode(this.infoList, 'ul', 'info-list');
-    this.infoList.innerHTML = `<li><h5>Age: <span>${this.age}</span></h5></li>
-    <li><h5>Inoculations: <span>${this.inoculations}</span></h5></li>
-    <li><h5>Diseases: <span>${this.diseases}</span></h5></li>
-    <li><h5>Parasites: <span>${this.parasites}</span></h5></li>`;
+    this.infoList.innerHTML = `<li><h5>Date: <span>${this.date}</span></h5></li>
+    <li><h5>Category: <span>${this.category}</span></h5></li>
+    <li><h5>Tech stack: <span>${this.stack.join(', ')}</span></h5></li>`;
     this.appendCardModalElement();
     return this.content;
   }
@@ -81,9 +69,10 @@ export class CardModal extends Modal {
     this.content.append(this.imgCardModal);
     this.content.append(this.infoCardModal);
     this.infoCardModal.append(this.infoTitle);
-    this.infoCardModal.append(this.infoSubtitle);
-    this.infoCardModal.append(this.infoParagraph);
     this.infoCardModal.append(this.infoList);
+    this.infoCardModal.append(this.infoDemo);
+    this.infoCardModal.append(this.infoCode);
+    this.infoCardModal.append(this.infoParagraph);
   }
 
   renderCardModal() {
