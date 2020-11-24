@@ -1,6 +1,6 @@
 .start-screen {
   padding-top: 80px;
-  background-image: url('./assets/images/1.jpg');
+  background-image: url("./assets/images/1.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -76,6 +76,7 @@
     }
 
     .start-screen__content_button {
+      margin-right: 15px;
       @media (max-width: $content-width) {
         align-self: center;
         margin-top: 2px;
@@ -99,7 +100,6 @@
 
     @media (max-width: $content-width) {
       margin-top: 20px;
-      align-self: flex-end;
 
       img {
         width: 569px;

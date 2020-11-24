@@ -18,6 +18,7 @@ export class CardModal extends Modal {
 
   generateContentCardModal() {
     this.content = super.createDomNode(this.modal, 'div', 'card-modal-content');
+    this.body = super.createDomNode(this.modal, 'div', 'card-modal-body');
     this.imgCardModal = super.createDomNode(
       this.imgCardModal,
       'img',
@@ -34,6 +35,12 @@ export class CardModal extends Modal {
 
     this.infoTitle = super.createDomNode(this.infoTitle, 'h3', 'info-title');
     this.infoTitle.innerHTML = this.id;
+
+    this.buttonsModal = super.createDomNode(
+      this.buttonsModal,
+      'div',
+      'buttons_modal'
+    );
 
     this.infoDemo = super.createDomNode(this.infoDemo, 'a', 'button_primary');
     this.infoDemo.innerHTML = `LIVE DEMO`;
@@ -66,12 +73,14 @@ export class CardModal extends Modal {
   }
 
   appendCardModalElement() {
-    this.content.append(this.imgCardModal);
-    this.content.append(this.infoCardModal);
-    this.infoCardModal.append(this.infoTitle);
+    this.content.append(this.infoTitle);
+    this.content.append(this.body);
+    this.body.append(this.imgCardModal);
+    this.body.append(this.infoCardModal);
     this.infoCardModal.append(this.infoList);
-    this.infoCardModal.append(this.infoDemo);
-    this.infoCardModal.append(this.infoCode);
+    this.infoCardModal.append(this.buttonsModal);
+    this.buttonsModal.append(this.infoDemo);
+    this.buttonsModal.append(this.infoCode);
     this.infoCardModal.append(this.infoParagraph);
   }
 

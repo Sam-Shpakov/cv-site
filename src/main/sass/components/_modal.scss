@@ -9,52 +9,58 @@
   justify-content: center;
   align-items: center;
   z-index: 5;
-}
 
-.overlay:hover {
-  cursor: pointer;
-}
-
-.modal {
-  position: relative;
-  border-radius: 3px;
-  background-color: $color-modal;
-  width: 950px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (max-width: $contentModal-width) {
-    width: 630px;
+  .overlay:hover {
+    cursor: pointer;
   }
 
-  @media (max-width: $tablet-width) {
+  .modal {
+    position: relative;
+    border-radius: 3px;
+    background-color: $color-modal;
+    width: 950px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media (max-width: $contentModal-width) {
+      width: 630px;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 100%;
+      margin: 10px;
+    }
+    transition: all 500ms ease-in;
+    transform: scale3d(0, 0, 0);
+  }
+
+  .modal:hover {
+    cursor: auto;
+  }
+
+  .modal__close {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    align-self: flex-end;
+    cursor: pointer;
+    @media (max-width: $contentModal-width) {
+      width: 30px;
+      height: 30px;
+    }
+    @media (max-width: $tablet-width) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+
+  .modal__content {
     width: 100%;
-    margin: 10px;
   }
-}
 
-.modal:hover {
-  cursor: auto;
-}
-
-.modal__close {
-  position: relative;
-  width: 50px;
-  height: 50px;
-  align-self: flex-end;
-  cursor: pointer;
-  @media (max-width: $content-width) {
-    width: 30px;
-    height: 30px;
+  .open {
+    transform: scale3d(1, 1, 1);
   }
-  @media (max-width: $tablet-width) {
-    width: 30px;
-    height: 30px;
-  }
-}
-
-.modal__content {
-  width: 100%;
 }

@@ -1,2 +1,2 @@
-export { giveRandomArray } from './random';
-export { giveInfoItems } from './service';
+export { giveRandomArray } from "./random";
+export { giveInfoItems, giveInfoCertificate } from "./service";

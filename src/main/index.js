@@ -1,19 +1,21 @@
 import {
   menuClickHandler,
   parallaxMoveHandler,
-  parallaxCardHandler,
   filterCardHandler,
   onScrollHandler,
   addCardClickHandler,
   onScrollAnimationHandler,
-} from './js';
+  addCard,
+  addCertificateClickHandler,
+} from "./js";
 
 window.onload = () => {
+  addCard();
   menuClickHandler();
   parallaxMoveHandler();
-  parallaxCardHandler();
   filterCardHandler();
   onScrollHandler();
   onScrollAnimationHandler();
   addCardClickHandler();
+  addCertificateClickHandler();
 };

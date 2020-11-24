@@ -25,14 +25,13 @@ export class Modal {
       'div',
       'modal__close'
     );
-    this.modalCloseBtn.innerHTML =
-      '<button class="button_close">x</button>';
+    this.modalCloseBtn.innerHTML = '<button class="button_close">x</button>';
 
     this.setContent(content);
     this.appendModalElement();
 
     this.bindEvents();
-    this.openModal();
+    this.addModal();
   }
 
   createDomNode(node, element, ...classes) {
@@ -65,8 +64,12 @@ export class Modal {
     );
   }
 
-  openModal() {
+  addModal() {
     document.body.append(this.overlay);
+  }
+
+  openModal() {
+    this.modal.classList.add('open');
   }
 
   handlerCloseModal(event) {

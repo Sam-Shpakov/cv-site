@@ -3,80 +3,40 @@
     "id": "gem-puzzle",
     "img": "./assets/images/gem-puzzle.png",
     "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
+    "category": "react, redux, typescript",
+    "description": "This is a classic tag game. Created from scratch, React, redax,Ant desing, TypeScript were used. Educational project.",
     "demo": "https://skaymant-gem-puzzle.netlify.app/",
     "code": "https://github.com/SkaymanT/gem-puzzle",
     "stack": ["Ant Design", "React", "Redux", "TypeScript"]
   },
   {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
+    "id": "fancy-weather",
+    "img": "./assets/images/fancy-weather.png",
+    "date": " 15, Juily 2020",
+    "category": "typescript",
+    "description": "This is a weather app. Created from scratch, TypeScript were used. Educational project.",
+    "demo": "https://skaymant-fancy-weather-develop.netlify.app/",
+    "code": "https://github.com/SkaymanT/fancy-weather",
+    "stack": ["TypeScript"]
   },
   {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
+    "id": "english-for-kids",
+    "img": "./assets/images/english-for-kids.png",
+    "date": " 20, April 2020",
+    "category": "javascript",
+    "description": "This is a English learning app. Created from scratch, TypeScript were used. Educational project.",
+    "demo": "https://skaymant-english-for-kids-develop.netlify.app/",
+    "code": "https://github.com/SkaymanT/english-for-kids",
+    "stack": ["JavaScript"]
   },
   {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
-  },
-  {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
-  },
-  {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
-  },
-  {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
-  },
-  {
-    "id": "gem-puzzle",
-    "img": "./assets/images/gem-puzzle.png",
-    "date": " 20, November 2020",
-    "category": "React+Redux+TypeScript",
-    "description": "This is a classic tag game. Created from scratch, React, redax, ant desing, thaiscript were used. Educational project.",
-    "demo": "https://skaymant-gem-puzzle.netlify.app/",
-    "code": "https://github.com/SkaymanT/gem-puzzle",
-    "stack": ["Ant Design", "React", "Redux", "TypeScript"]
+    "id": "songbird",
+    "img": "./assets/images/songbird.png",
+    "date": " 4, September 2020",
+    "category": "react, typescript",
+    "description": "This is a song bird learning app. Created from scratch, TypeScript were used. Educational project.",
+    "demo": "https://skaymant-songbird.netlify.app/",
+    "code": "https://github.com/SkaymanT/songbird",
+    "stack": ["React", "TypeScript"]
   }
 ]
