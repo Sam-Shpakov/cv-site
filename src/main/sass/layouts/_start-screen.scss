@@ -79,7 +79,7 @@
       margin-right: 15px;
       @media (max-width: $content-width) {
         align-self: center;
-        margin-top: 2px;
+        margin-bottom: 5px;
       }
       transform: scale(0);
       transition: all 0.8s ease 0.7s;
@@ -93,28 +93,10 @@
   .start-screen__image {
     display: flex;
     transition: 0.3s;
-    img {
-      width: 569px;
-      height: 593px;
-    }
+    height: 400px;
 
     @media (max-width: $content-width) {
-      margin-top: 20px;
-
-      img {
-        width: 569px;
-        height: 593px;
-      }
-    }
-
-    @media (max-width: $tablet-width) {
-      margin-top: 25px;
-      align-self: flex-end;
-
-      img {
-        width: 300px;
-        height: 300px;
-      }
+      height: 500px;
     }
   }
 }
