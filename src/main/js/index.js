@@ -4,4 +4,4 @@ export { addCertificateClickHandler } from './certificate';
 export { parallaxMoveHandler, parallaxCardHandler } from './parallax';
 export { filterCardHandler } from './filter';
 export { onScrollHandler, onScrollAnimationHandler } from './scroll';
-export { onClickCubelHandler } from './cube';
+export { addCube } from './cube';

@@ -7,6 +7,7 @@ import {
   onScrollAnimationHandler,
   addCard,
   addCertificateClickHandler,
+  addCube,
 } from "./js";
 
 window.onload = () => {
@@ -18,4 +19,5 @@ window.onload = () => {
   onScrollAnimationHandler();
   addCardClickHandler();
   addCertificateClickHandler();
+  addCube();
 };
