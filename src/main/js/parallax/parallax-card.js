@@ -10,7 +10,7 @@ function transformElement(elementOne, elementTwo) {
   return function (mouseEvent) {
     let mouseX, mouseY;
 
-    let transformAmount = 5;
+    let transformAmount = 10;
 
     mouseX = mouseEvent.pageX;
     mouseY = mouseEvent.pageY;
