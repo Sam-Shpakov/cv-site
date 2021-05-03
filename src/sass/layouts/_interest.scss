@@ -73,6 +73,10 @@
       flex-direction: column;
       color: $light-gray;
       transform: scale(0);
+
+      img {
+        width: 50px;
+      }
     }
 
     &.anim-active {
