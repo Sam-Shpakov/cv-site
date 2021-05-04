@@ -70,8 +70,8 @@ $cube-width: 300px;
   opacity: 0.9;
   height: $cube-width;
   width: $cube-width;
-  background: url(./assets/images/noise_transparent.png),
-    radial-gradient(100% 215.42% at 0% 0%, #7c7c7c 0%, #262425 100%), #211f20;
+  background: radial-gradient(100% 215.42% at 0% 0%, #7c7c7c 0%, #262425 100%),
+    #211f20;
   border: 2px solid $gray;
   -webkit-touch-callout: none;
   -moz-touch-callout: none;
