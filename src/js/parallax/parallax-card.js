@@ -14,13 +14,15 @@ function transformElement(elementOne, elementTwo) {
   } else if (navigator.userAgent.indexOf("YaBrowser") != -1) {
     prefix = "-webkit-";
   } else if (navigator.userAgent.indexOf("Safari") != -1) {
-    prefix = "-webkit-";
+    prefix = "";
   } else if (navigator.userAgent.indexOf("Firefox") != -1) {
-    prefix = "-webkit-";
+    prefix = "-moz-";
   } else {
     prefix = "-webkit-";
   }
-  console.log(prefix);
+  if (prefix === "") {
+    return;
+  }
   return function (mouseEvent) {
     let mouseX, mouseY;
     let transformAmount = 10;
