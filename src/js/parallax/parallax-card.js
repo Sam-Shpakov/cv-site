@@ -8,22 +8,22 @@ function transformElement(elementOne, elementTwo) {
   let myPanel = elementOne;
   let subpanel = elementTwo;
 
-  let prefix = "";
-  if (navigator.userAgent.indexOf("Edg") != -1) {
-    prefix = "-webkit-";
-  } else if (navigator.userAgent.indexOf("YaBrowser") != -1) {
-    prefix = "-webkit-";
-  } else if (navigator.userAgent.indexOf("Safari") != -1) {
-    prefix = "";
-  } else if (navigator.userAgent.indexOf("Firefox") != -1) {
-    prefix = "-moz-";
+  let prefix = '';
+  if (navigator.userAgent.indexOf('Edg') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('YaBrowser') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('Safari') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('Firefox') != -1) {
+    prefix = '-moz-';
   } else {
-    prefix = "-webkit-";
+    prefix = '-webkit-';
   }
-  if (prefix === "") {
+  if (prefix === '') {
     return;
   }
-  return;
+
   return function (mouseEvent) {
     let mouseX, mouseY;
     let transformAmount = 10;
@@ -38,7 +38,7 @@ function transformElement(elementOne, elementTwo) {
     const percentY = -((mouseY - centerY) / (myPanel.clientHeight / 2));
 
     subpanel.setAttribute(
-      "style",
+      'style',
       `${prefix}transform: perspective(400px) rotateY(${
         percentX * transformAmount
       }deg) rotateX(${
@@ -51,34 +51,34 @@ function handleMouseEnter(element) {
   let subpanel = element;
   return function () {
     setTimeout(() => {
-      subpanel.style.transition = "";
+      subpanel.style.transition = '';
     }, 100);
-    subpanel.style.transition = "transform 0.1s";
+    subpanel.style.transition = 'transform 0.1s';
   };
 }
 
 function handleMouseLeave(element) {
   let subpanel = element;
-  let prefix = "";
-  if (navigator.userAgent.indexOf("Edg") != -1) {
-    prefix = "-webkit-";
-  } else if (navigator.userAgent.indexOf("YaBrowser") != -1) {
-    prefix = "-webkit-";
-  } else if (navigator.userAgent.indexOf("Safari") != -1) {
-    prefix = "-webkit-";
-  } else if (navigator.userAgent.indexOf("Firefox") != -1) {
-    prefix = "-webkit-";
+  let prefix = '';
+  if (navigator.userAgent.indexOf('Edg') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('YaBrowser') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('Safari') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('Firefox') != -1) {
+    prefix = '-webkit-';
   } else {
-    prefix = "-webkit-";
+    prefix = '-webkit-';
   }
   return function () {
-    subpanel.style.transition = "transform 0.1s";
+    subpanel.style.transition = 'transform 0.1s';
     setTimeout(() => {
-      subpanel.style.transition = "";
+      subpanel.style.transition = '';
     }, 100);
 
     subpanel.setAttribute(
-      "style",
+      'style',
       `${prefix}transform: perspective(400px) rotateY(0deg) rotateX(0deg); z-index: 0; cursor: pointer;`
     );
   };
