@@ -23,6 +23,7 @@ function transformElement(elementOne, elementTwo) {
   if (prefix === "") {
     return;
   }
+  return;
   return function (mouseEvent) {
     let mouseX, mouseY;
     let transformAmount = 10;
