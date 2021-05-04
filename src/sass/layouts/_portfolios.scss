@@ -85,7 +85,6 @@
         overflow: visible;
         display: flex;
         visibility: visible;
-        z-index: 0;
         @media (max-width: $mobile-big-width) {
           width: 230px;
           height: 290px;
