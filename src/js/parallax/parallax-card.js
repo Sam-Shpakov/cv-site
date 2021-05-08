@@ -9,6 +9,7 @@ export function parallaxCardHandler(element) {
     scale: 1.2,
     transition: true,
     reset: true,
+    gyroscope: false,
   });
 }
 

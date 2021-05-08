@@ -3,13 +3,10 @@ import { parallaxCardHandler } from '../index';
 export function generateCards(items) {
   const cards = createDomNode(cards, 'div', 'filter-container');
   items.forEach((element) => {
-    // let item = createDomNode(item, "div", "filter-item", "active-item");
-    // item.dataset.category = element.category;
-
     let card = createDomNode(card, 'div', 'card', 'filter-item', 'active-item');
     card.id = element.id;
     card.dataset.category = element.category;
-    // item.append(card);
+
 
     let title = createDomNode(title, 'div', 'card__title');
     title.innerHTML = 'Click for detail';
