@@ -1,31 +1,32 @@
-import { parallaxCardHandler } from "../index";
+import { parallaxCardHandler } from '../index';
 
 export function generateCards(items) {
-  const cards = createDomNode(cards, "div", "filter-container");
+  const cards = createDomNode(cards, 'div', 'filter-container');
   items.forEach((element) => {
-    let item = createDomNode(item, "div", "filter-item", "active-item");
-    item.dataset.category = element.category;
+    // let item = createDomNode(item, "div", "filter-item", "active-item");
+    // item.dataset.category = element.category;
 
-    let card = createDomNode(card, "div", "card");
+    let card = createDomNode(card, 'div', 'card', 'filter-item', 'active-item');
     card.id = element.id;
-    item.append(card);
+    card.dataset.category = element.category;
+    // item.append(card);
 
-    let title = createDomNode(title, "div", "card__title");
-    title.innerHTML = "Click for detail";
+    let title = createDomNode(title, 'div', 'card__title');
+    title.innerHTML = 'Click for detail';
     card.append(title);
 
-    let imageContainer = createDomNode(imageContainer, "div", "card__image");
+    let imageContainer = createDomNode(imageContainer, 'div', 'card__image');
     card.append(imageContainer);
 
-    let image = createDomNode(imageContainer, "img");
+    let image = createDomNode(imageContainer, 'img');
     image.src = element.img;
     imageContainer.append(image);
 
-    let name = createDomNode(name, "div", "card__name");
+    let name = createDomNode(name, 'div', 'card__name');
     name.innerHTML = element.id;
     card.append(name);
-    bindEvents(item);
-    cards.append(item);
+    bindEvents(card);
+    cards.append(card);
   });
 
   return cards;
