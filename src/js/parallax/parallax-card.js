@@ -1,6 +1,20 @@
 import VanillaTilt from 'vanilla-tilt';
 
 export function parallaxCardHandler(element) {
+  if (navigator.userAgent.indexOf('Edg') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('YaBrowser') != -1) {
+    prefix = '-webkit-';
+  } else if (navigator.userAgent.indexOf('Safari') != -1) {
+    prefix = '';
+  } else if (navigator.userAgent.indexOf('Firefox') != -1) {
+    prefix = '-moz-';
+  } else {
+    prefix = '-webkit-';
+  }
+  if (prefix === '') {
+    return;
+  }
   VanillaTilt.init(element, {
     max: 10,
     reverse: false,
