@@ -1,6 +1,7 @@
 import VanillaTilt from 'vanilla-tilt';
 
 export function parallaxCardHandler(element) {
+  let prefix = '';
   if (navigator.userAgent.indexOf('Edg') != -1) {
     prefix = '-webkit-';
   } else if (navigator.userAgent.indexOf('YaBrowser') != -1) {
